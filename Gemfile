@@ -9,14 +9,16 @@ gem 'rails', '~> 6.0.0'
 gem 'sqlite3', '~> 1.4', group: [:development, :test]
 
 # Use bootstrap library for styles
-gem 'bootstrap-sass', '~> 3.4.1'
-
+gem 'bootstrap-sass', '3.3.1'
 # Use postgresql as database for production
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
 
+gem "jquery-ui-rails"
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
